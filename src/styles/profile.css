@@ -1,0 +1,747 @@
+/* ========================================
+   1. PROFILE HERO
+======================================== */
+
+.profile-hero {
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.profile-cover {
+    position: relative;
+    height: 108px;
+    background: linear-gradient(110deg, #182849, #304b7d);
+}
+
+.cover-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(
+            circle at 78% 40%,
+            #ffffff1b 0 2px,
+            transparent 3px
+        ),
+        linear-gradient(
+            45deg,
+            transparent 48%,
+            #ffffff0b 49%,
+            #ffffff0b 50%,
+            transparent 51%
+        );
+    background-size: 22px 22px, 45px 45px;
+}
+
+.profile-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 0 25px 22px;
+}
+
+.avatar-profile {
+    width: 76px;
+    height: 76px;
+    border: 4px solid #fff;
+    margin-top: -32px;
+    position: relative;
+    font-size: 26px;
+}
+
+.profile-identity {
+    min-width: 0;
+    flex: 1;
+    padding-top: 12px;
+}
+
+.profile-identity h2 {
+    font-size: 20px;
+    margin: 0 0 5px;
+    color: #263249;
+}
+
+.profile-identity > p {
+    font-size: 11px;
+    color: #8995a8;
+    margin: 0 0 11px;
+    overflow-wrap: anywhere;
+}
+
+.identity-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.verified-chip {
+    background: #eaf8f1;
+    color: #16845b;
+}
+
+.verified-chip i {
+    font-size: 10px;
+}
+
+.profile-joined {
+    align-self: center;
+    display: grid;
+    gap: 5px;
+    text-align: right;
+    padding-top: 11px;
+}
+
+.profile-joined span {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    color: #98a2b1;
+}
+
+.profile-joined strong {
+    font-size: 11px;
+    color: #46536a;
+}
+
+
+/* ========================================
+   2. PROFILE DETAILS GRID
+======================================== */
+
+.profile-detail-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 18px;
+}
+
+.detail-card {
+    padding: 23px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.section-icon {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: #edf1ff;
+    color: #536be0;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.section-icon.purple {
+    background: #f1edff;
+    color: #8966d9;
+}
+
+.section-title h2 {
+    font-size: 15px;
+    margin: 0 0 5px;
+    color: #2c374d;
+}
+
+.section-title p {
+    font-size: 10px;
+    line-height: 1.5;
+    color: #909bad;
+    margin: 0;
+}
+
+
+/* ========================================
+   3. DETAIL LIST AND ROWS
+======================================== */
+
+.detail-list {
+    padding: 5px 0 12px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f2f6;
+}
+
+.detail-row:last-child {
+    border-bottom: 0;
+}
+
+.detail-row > span {
+    font-size: 11px;
+    color: #8995a8;
+}
+
+.detail-row > strong {
+    font-size: 11px;
+    color: #344157;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.verified-inline {
+    color: #22a573;
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+
+/* ========================================
+   4. SUBTLE LINK
+======================================== */
+
+.subtle-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: #4c65d8;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.subtle-link i {
+    font-size: 10px;
+    transition: transform 0.18s;
+}
+
+.subtle-link:hover i {
+    transform: translateX(3px);
+}
+
+
+/* ========================================
+   5. SECURITY SETTINGS
+======================================== */
+
+.security-setting {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f2f6;
+}
+
+.security-setting:last-child {
+    border-bottom: 0;
+}
+
+.setting-symbol {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    background: #edf1ff;
+    color: #5b71e0;
+    flex-shrink: 0;
+    font-size: 12px;
+}
+
+.setting-symbol.green {
+    background: #e9f8f0;
+    color: #1a9a69;
+}
+
+.setting-symbol.orange {
+    background: #fff3e7;
+    color: #d88b39;
+}
+
+.security-setting > div {
+    min-width: 0;
+    flex: 1;
+}
+
+.security-setting strong,
+.security-setting small {
+    display: block;
+}
+
+.security-setting strong {
+    font-size: 11px;
+    color: #354157;
+}
+
+.security-setting small {
+    font-size: 9px;
+    color: #929daf;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.security-setting > a {
+    font-size: 10px;
+    color: #4e66dc;
+    font-weight: 700;
+}
+
+.status-pill {
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: #eaf8f1;
+    color: #18875e;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   6. EDIT PROFILE LAYOUT
+======================================== */
+
+.edit-layout {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.5fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.edit-aside {
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.edit-aside .avatar-profile {
+    margin: 0 auto 13px;
+    width: 70px;
+    height: 70px;
+    border: 0;
+}
+
+.edit-aside h3 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.edit-aside > p {
+    font-size: 10px;
+    color: #8d98aa;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.edit-aside-divider {
+    height: 1px;
+    background: #edf0f5;
+    margin: 22px 0;
+}
+
+.edit-tip {
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    padding: 13px;
+    background: #f7f8ff;
+    border: 1px solid #eaedff;
+    border-radius: 10px;
+}
+
+.edit-tip > i {
+    color: #6e7fe3;
+    margin-top: 2px;
+}
+
+.edit-tip strong {
+    font-size: 10px;
+    color: #44537a;
+}
+
+.edit-tip p {
+    font-size: 10px;
+    line-height: 1.6;
+    color: #8995ae;
+    margin: 5px 0 0;
+}
+
+
+/* ========================================
+   7. EDIT PROFILE FORM
+======================================== */
+
+.edit-form-card {
+    padding: 23px;
+}
+
+.edit-form-card .section-title {
+    margin-bottom: 21px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 19px 16px;
+}
+
+.form-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 21px;
+    padding: 11px 12px;
+    background: #f7f8fc;
+    border-radius: 8px;
+    color: #8490a3;
+    font-size: 10px;
+}
+
+.form-note i {
+    color: #7588d8;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px;
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid #edf0f5;
+}
+
+
+/* ========================================
+   8. PASSWORD LAYOUT
+======================================== */
+
+.password-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(250px, 0.7fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.password-form-card {
+    padding: 24px;
+}
+
+.password-form-card .section-title {
+    margin-bottom: 22px;
+}
+
+.password-form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.password-form-card .password-rules {
+    margin-top: -6px;
+}
+
+.password-field-spacer {
+    height: 0;
+}
+
+.password-form-card .form-actions {
+    margin-top: 5px;
+}
+
+.password-form-card .form-actions .btn {
+    min-width: 175px;
+}
+
+
+/* ========================================
+   9. PASSWORD GUIDANCE
+======================================== */
+
+.password-guidance {
+    padding: 25px 22px;
+    border: 1px solid #e0e7ff;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f7f8ff, #f0f3ff);
+}
+
+.guidance-shield {
+    display: grid;
+    place-items: center;
+    width: 47px;
+    height: 47px;
+    border-radius: 14px;
+    background: #e1e8ff;
+    color: #5068dc;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.password-guidance h2 {
+    font-size: 18px;
+    line-height: 1.35;
+    color: #293859;
+    margin: 0 0 9px;
+}
+
+.password-guidance > p {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #7c8aaa;
+    margin-bottom: 20px;
+}
+
+.password-guidance ul {
+    list-style: none;
+    display: grid;
+    gap: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.password-guidance li {
+    display: flex;
+    gap: 9px;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #526181;
+}
+
+.password-guidance li i {
+    color: #219b70;
+    margin-top: 2px;
+}
+
+.guidance-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid #e1e6f7;
+    padding-top: 16px;
+    margin-top: 22px;
+    color: #8290ae;
+    font-size: 9px;
+}
+
+.guidance-footer i {
+    color: #5d76db;
+}
+
+
+/* ========================================
+   10. SUCCESS MESSAGE
+======================================== */
+
+.success-inline {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 12px;
+    margin-bottom: 17px;
+    border-radius: 9px;
+    background: #eaf8f1;
+    color: #18865d;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.success-inline i {
+    margin-top: 2px;
+}
+
+
+/* ========================================
+   11. RESPONSIVE: TABLETS AND LAPTOPS
+======================================== */
+
+@media (max-width: 1050px) {
+    .profile-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edit-layout {
+        grid-template-columns: minmax(190px, 0.6fr) minmax(0, 1.4fr);
+    }
+
+    .password-layout {
+        grid-template-columns: minmax(0, 1.2fr) minmax(220px, 0.8fr);
+    }
+
+    .detail-card {
+        padding: 20px;
+    }
+}
+
+
+/* ========================================
+   12. RESPONSIVE: MOBILE AND TABLETS
+======================================== */
+
+@media (max-width: 760px) {
+    .profile-hero-content {
+        flex-wrap: wrap;
+        padding: 0 18px 20px;
+        gap: 13px;
+    }
+
+    .profile-joined {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        text-align: left;
+        padding: 0 0 0 2px;
+    }
+
+    .profile-joined strong {
+        font-size: 10px;
+    }
+
+    .profile-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edit-layout,
+    .password-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .edit-aside {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 14px;
+        text-align: left;
+        align-items: center;
+        padding: 17px;
+    }
+
+    .edit-aside .avatar-profile {
+        grid-row: span 3;
+        margin: 0;
+        width: 58px;
+        height: 58px;
+        font-size: 20px;
+    }
+
+    .edit-aside h3 {
+        align-self: end;
+        margin-bottom: 3px;
+    }
+
+    .edit-aside > p {
+        align-self: start;
+        margin: 0 0 5px;
+    }
+
+    .edit-aside .verified-chip {
+        justify-self: start;
+    }
+
+    .edit-aside-divider,
+    .edit-tip {
+        display: none;
+    }
+
+    .password-guidance {
+        order: -1;
+    }
+
+    .password-guidance ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .form-grid {
+        gap: 16px 12px;
+    }
+
+    .edit-form-card,
+    .password-form-card {
+        padding: 19px;
+    }
+
+    .detail-card {
+        padding: 19px;
+    }
+}
+
+
+/* ========================================
+   13. RESPONSIVE: SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+    .profile-hero-content {
+        padding: 0 14px 17px;
+        gap: 10px;
+    }
+
+    .profile-hero .profile-cover {
+        height: 85px;
+    }
+
+    .profile-hero-content .avatar-profile {
+        width: 60px;
+        height: 60px;
+        margin-top: -25px;
+        font-size: 21px;
+    }
+
+    .profile-identity {
+        padding-top: 10px;
+    }
+
+    .profile-identity h2 {
+        font-size: 17px;
+    }
+
+    .profile-identity > p {
+        font-size: 10px;
+    }
+
+    .identity-tags {
+        gap: 5px;
+    }
+
+    .identity-tags .role-chip,
+    .identity-tags .verified-chip {
+        font-size: 8px;
+        padding: 5px 7px;
+    }
+
+    .profile-joined {
+        font-size: 9px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edit-form-card .section-title,
+    .password-form-card .section-title {
+        align-items: flex-start;
+    }
+
+    .form-actions {
+        flex-wrap: wrap;
+    }
+
+    .form-actions .btn {
+        flex: 1;
+    }
+
+    .password-guidance ul {
+        grid-template-columns: 1fr;
+    }
+
+    .password-guidance {
+        padding: 20px;
+    }
+
+    .detail-row {
+        gap: 8px;
+    }
+
+    .detail-row > span,
+    .detail-row > strong {
+        font-size: 10px;
+    }
+}
